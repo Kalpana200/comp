@@ -1,0 +1,77 @@
+body {
+  font-family: 'Barrio', cursive;
+  overflow-x: hidden;
+}
+
+/* Navigation styles */
+.navbar-brand {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #e4f9f5;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand:hover {
+  color: #e4f9f5;
+}
+
+.navbar-custom {
+  background-color: #40514e;
+  padding: 0;
+}
+
+.team-btn {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  background-color: #40514e;
+  font-size: 1.7rem;
+  color: #e4f9f5;
+  border-style: none;
+}
+
+/* Title styles */
+#title {
+  background-color: #11999e;
+  height: 32rem;
+}
+
+.title-text {
+  color: #e4f9f5;
+  padding-left: 8rem;
+  padding-top: 10rem;
+  font-size: 3.5rem;
+}
+
+.title-image {
+  height: 35rem;
+}
+
+/* Carousel styles */
+#carousel {
+  background-color: #30e3ca;
+  height: 32rem;
+}
+
+/* Cards styles */
+#cards-section {
+  background-color: #11999e;
+  height: 87rem;
+}
+
+.card {
+  margin: 2rem;
+  background-color: #40514e;
+  color: #e4f9f5;
+}
+
+.images {
+  height: 7.5rem;
+  background-color: white;
+}
+
+/* Contact Us styles */
+#contact-us {
+  background-color: #30e3ca;
+  height: 32rem;
+}

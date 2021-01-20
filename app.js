@@ -13,6 +13,18 @@ app.get("/",function(req,res){
 });
 
 
+app.get("/:platform", function(req , res){
+    console.log(req.params.platform);
+    
+    res.render("contest" , {platform : req.params.platform});
+});
+
+app.get("/:platform/:time" , function(req , res){
+  
+ console.log(req.params.time);
+});
+
+
 
 
 app.listen(3000, function() {

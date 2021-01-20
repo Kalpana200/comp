@@ -75,3 +75,27 @@ body {
   background-color: #30e3ca;
   height: 32rem;
 }
+
+.contact-heading{
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.mail{
+  height: 4rem;
+  width: 25rem;
+  margin-left: 28rem;
+  margin-top: 4rem;
+  background-color: #40514e;
+  padding-top: 0.5rem;
+}
+
+.mailing{
+  text-decoration: none;
+  color: #e4f9f5;
+  font-size: 2rem;
+}
+
+.mailing:hover{
+  color: Bisque;
+}

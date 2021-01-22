@@ -1,5 +1,4 @@
 <%- include("header"); -%>
-<%- include("header"); -%>
 
   <div class="card contest-card">
     <div class="card-body">
@@ -7,14 +6,27 @@
         <%= platform %>
       </h1>
       <br>
-      <form action="/time" method="POST">
-        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>fut" type="submit">Future Contests</button>
-         
-          
-        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>liv"  type="submit">Live
+
+
+
+
+      <form action="/contest" method="POST">
+        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>fut"
+          type="submit">Future Contests</button>
+
+
+        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>liv" type="submit">Live
           Contests</button>
-        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>pas"  type="submit">Past
+        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>pas" type="submit">Past
           Contests</button>
+
       </form>
+      <% for(var i=0;i<contestArray.length;i++) { %>
+        <p>
+
+          <%= contestArray[i].event %>
+
+        </p>
+        <% } %>
     </div>
   </div>

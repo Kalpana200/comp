@@ -24,9 +24,9 @@ body {
 .team-btn {
   margin-right: 2rem;
   margin-top: 1rem;
-  background-color: #40514e;
+  /* background-color: #40514e; */
   font-size: 1.7rem;
-  color: #e4f9f5;
+  color : black;
   border-style: none;
 }
 
@@ -98,4 +98,15 @@ body {
 
 .mailing:hover{
   color: Bisque;
+}
+
+
+/* Contest page */
+
+.contest-card{
+  margin-left: 300px;
+}
+
+.card-title{
+  text-align : center;
 }

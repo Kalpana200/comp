@@ -1,11 +1,20 @@
 <%- include("header"); -%>
+<%- include("header"); -%>
 
-<div class="card contest-card">
+  <div class="card contest-card">
     <div class="card-body">
-      <h1 class="card-title"> <%= platform %></h1>
-     <br>
-      <a href="/<%= platform %>/future" class="card-link btn btn-lg btn-outline-light">Future Contests</a>
-      <a href="/<%= platform %>/live" class="card-link btn btn-lg btn-outline-light">Live Contests</a>
-      <a href="/<%= platform %>/past" class="card-link btn btn-lg btn-outline-light">Past Contests</a>
+      <h1 class="card-title">
+        <%= platform %>
+      </h1>
+      <br>
+      <form action="/time" method="POST">
+        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>fut" type="submit">Future Contests</button>
+         
+          
+        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>liv"  type="submit">Live
+          Contests</button>
+        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>pas"  type="submit">Past
+          Contests</button>
+      </form>
     </div>
   </div>

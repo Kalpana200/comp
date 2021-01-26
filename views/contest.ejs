@@ -21,12 +21,27 @@
           Contests</button>
 
       </form>
-      <% for(var i=0;i<contestArray.length;i++) { %>
-        <p>
-
-          <%= contestArray[i].event %>
-
-        </p>
-        <% } %>
     </div>
   </div>
+
+      <% for(var i=0;i<contestArray.length;i++) { %>
+        <div class="card text-center">
+          <div class="card-header">
+            <%= platform %> <%= time %> Contests
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><%= contestArray[i].event %></h5>
+            <p class="card-text"> Start Date :  <%= contestArray[i].start %> </p>
+            <p class="card-text"> End Date : <%= contestArray[i].end %> </p>
+            
+            <p class="card-text"> Duration : <%= contestArray[i].duration %></p>
+            
+          </div>
+          <div class="card-footer text-muted">
+            <a href="<%= contestArray[i].href %>" class="btn btn-primary" target="_blank">Visit</a>
+          </div>
+        </div>
+        <% } %>
+
+
+   

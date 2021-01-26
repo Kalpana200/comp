@@ -1,5 +1,5 @@
 body {
-  font-family: 'Barrio', cursive;
+  font-family: 'Ubuntu', sans-serif;
   overflow-x: hidden;
 }
 
@@ -17,22 +17,31 @@ body {
 }
 
 .navbar-custom {
-  background-color: #40514e;
+  background-color: #12232e;
   padding: 0;
 }
 
 .team-btn {
-  margin-right: 2rem;
-  margin-top: 1rem;
-  /* background-color: #40514e; */
+  margin-left: 550px;
   font-size: 1.7rem;
   color : black;
-  border-style: none;
+  text-decoration:none;
+}
+
+.contact-btn{
+  font-size: 1.7rem;
+  color : black;
+  text-decoration:none;
+  margin-right : 50px;
+}
+
+.box{
+  background: linear-gradient(110deg,  #12232e 69.5%, #EEFBFB 60%);
 }
 
 /* Title styles */
 #title {
-  background-color: #11999e;
+  background: linear-gradient(110deg,  #12232e 60%, #EEFBFB 60%);
   height: 32rem;
 }
 
@@ -47,15 +56,21 @@ body {
   height: 35rem;
 }
 
+.title-name{
+  text-align: left;
+  margin-left: 130px;
+}
+
 /* Carousel styles */
 #carousel {
-  background-color: #30e3ca;
+  background: #203647;
   height: 32rem;
+  
 }
 
 /* Cards styles */
 #cards-section {
-  background-color: #11999e;
+  background-color: #EEFBFB;
   height: 87rem;
 }
 
@@ -72,22 +87,27 @@ body {
 
 /* Contact Us styles */
 #contact-us {
-  background-color: #30e3ca;
-  height: 32rem;
+  background-color: #12232e;
+  
 }
 
 .contact-heading{
-  font-size: 5rem;
+  
   margin-bottom: 2rem;
+  text-align:center;
+  color:white;
+}
+
+.label-text{
+  color:white;
+}
+
+.input-text{
+  border-radius:5%;
 }
 
 .mail{
-  height: 4rem;
-  width: 25rem;
-  margin-left: 28rem;
-  margin-top: 4rem;
-  background-color: #40514e;
-  padding-top: 0.5rem;
+text-align:center;
 }
 
 .mailing{
@@ -110,3 +130,11 @@ body {
 .card-title{
   text-align : center;
 }
+
+/* footer */
+
+#footer{
+  background-color: #e4f9f5;
+  height:320px;
+}
+

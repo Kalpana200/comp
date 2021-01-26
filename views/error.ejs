@@ -1,0 +1,40 @@
+<%- include("header"); -%>
+
+    <div class="card contest-card">
+        <div class="card-body">
+            <h1 class="card-title">
+                <%= platform %>
+            </h1>
+            <br>
+
+
+
+
+            <form action="/contest" method="POST">
+                <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>fut"
+                    type="submit">Future Contests</button>
+
+
+                <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>liv"
+                    type="submit">Live
+                    Contests</button>
+                <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>pas"
+                    type="submit">Past
+                    Contests</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="card text-center">
+        <div class="card-header">
+           <%= platform %> <%= time %> Contests
+        </div>
+        <div class="card-body">
+
+            <p class="card-text">No <%= time %> contests available.</p>
+
+        </div>
+
+    </div>

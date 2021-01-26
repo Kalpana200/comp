@@ -38,7 +38,7 @@ app.get("/", function (req, res) {
 app.get("/:platform", function (req, res) {
   console.log(req.params.platform);
 
-  res.render("contest", { platform: req.params.platform , contestArray: Array});
+  res.render("time", { platform: req.params.platform});
 });
 
 app.get("/:platform/:time", function (req, res) {
@@ -66,17 +66,21 @@ app.post("/contest", function (req, res) {
 
 
   let url;
+  let time;
 
   if (s1 === "liv") {
     url = `https://clist.by:443/api/v1/json/contest/?resource__id=${Id[s2]}&end__gte=${dateString}&start__lte=${dateString}&order_by=id&${apiKey}`;
+    time = "live";
   }
 
   else if (s1 === "pas") {
     url = `https://clist.by:443/api/v1/json/contest/?resource__id=${Id[s2]}&start__gte=${pastString}&end__lt=${dateString}&order_by=-start&${apiKey}&limit=30`;
+    time = "past";
   }
 
   else if (s1 === "fut") {
     url = `https://clist.by:443/api/v1/json/contest/?resource__id=${Id[s2]}&start__gte=${dateString}&order_by=id&${apiKey}&limit=30`;
+    time = "future";
   }
 
 
@@ -93,16 +97,26 @@ app.post("/contest", function (req, res) {
 
     response.on("end", function () {
       let contestInfo = JSON.parse(stockData)
-      // console.log(contestInfo);
+      console.log(contestInfo);
       temp = contestInfo.objects;
       // res.write(temp);
       // console.log(dateString);
       console.log(temp);
-       res.render("contest" , {
-        platform : s3,
-        contestArray : temp
-        
-      });
+
+      if(temp.length===0){
+        res.render("error" , {platform : s3 , time : time});
+      }
+      else{
+        res.render("contest" , {
+          platform : s3,
+          contestArray : temp,
+          time : time
+          
+        });
+      }
+     
+      
+
       
     });
     

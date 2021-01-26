@@ -1,5 +1,6 @@
 <%- include("header"); -%>
 
+
   <!-- Title screen -->
   <section id="title">
     <div class="row">
@@ -12,6 +13,7 @@
         <a href="https://www.vecteezy.com/free-vector/female">Female Vectors by Vecteezy</a> -->
       </div>
     </div>
+  </div>
   </section>
 
   <!-- Carousel section -->
@@ -121,13 +123,26 @@
   <!-- Contact Us section -->
   <section id="contact-us">
     <div>
-     <h1 class="contact-heading">Found a bug or have a suggestion?</h1>
-     <h1>Contact us here:</h1>
-     <div class="mail">
-        <p><a class="mailing" href='mailto:iib2019029@iiita.ac.in,iib2019019@iiita.ac.in,iec2019029@iiita.ac.in'>Ruthless Web Hogs</a></p>
-     </div>
+     <h1 class="contact-heading" style="font-size:100px;">Get in touch</h1>
+     <h2 class="contact-heading">Want to get in touch? We'd love to hear from you.</h2>
+
+      <form action="mailto:iec2019029@iiita.ac.in,iib2019019@iiita.ac.in,iib2019029@iiita.ac.in" method="post" enctype="text/plain" class="mail">
+        <label class="label-text">Your Name:</label>
+        <input type="text" name="Your Name" class="input-text"><br><br>
+        <label class="label-text">Your Email:</label>
+        <input type="email" name="Your Email" class="input-text"><br><br>
+        <label class="label-text">Your Message:</label><br>
+        <textarea name="Your Message" class="input-text" cols="36" rows="10"></textarea><br><br>
+        <input type="submit" class="btn btn-lg btn-outline-light">
+        </form>
+        
+    
     </div>
   </section>
 </body>
+
+<footer id="footer">
+
+</footer>
 
 </html>

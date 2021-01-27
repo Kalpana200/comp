@@ -22,21 +22,28 @@ body {
 }
 
 .team-btn {
-  margin-left: 550px;
-  font-size: 1.7rem;
+  margin-left: 700px;
+  font-size: 1.5rem;
   color : black;
   text-decoration:none;
 }
 
 .contact-btn{
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color : black;
   text-decoration:none;
   margin-right : 50px;
+  size: 200px;
+}
+.contest-btn{
+  font-size: 1.5rem;
+  color : #e4f9f5;
+  text-decoration:none;
+  margin-left:130px;
 }
 
 .box{
-  background: linear-gradient(110deg,  #12232e 69.5%, #EEFBFB 60%);
+  background: linear-gradient(110deg,  #12232e 68.32%, #EEFBFB 60%);
 }
 
 /* Title styles */
@@ -53,7 +60,8 @@ body {
 }
 
 .title-image {
-  height: 35rem;
+  height: 30rem;
+  margin-top: 4rem;
 }
 
 .title-name{
@@ -65,7 +73,7 @@ body {
 #carousel {
   background: #203647;
   height: 32rem;
-  
+
 }
 
 /* Cards styles */
@@ -88,11 +96,11 @@ body {
 /* Contact Us styles */
 #contact-us {
   background-color: #12232e;
-  
+
 }
 
 .contact-heading{
-  
+
   margin-bottom: 2rem;
   text-align:center;
   color:white;

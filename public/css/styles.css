@@ -1,6 +1,7 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   overflow-x: hidden;
+  width:100%;
 }
 
 /* Navigation styles */
@@ -12,19 +13,19 @@ body {
   padding-bottom: 0;
 }
 
-.navbar-brand:hover {
+.title-name:hover {
   color: #e4f9f5;
 }
 
 .navbar-custom {
-  background-color: #12232e;
   padding: 0;
 }
 
 .team-btn {
-  margin-left: 700px;
+  margin-right : 20px;
+ 
   font-size: 1.5rem;
-  color : black;
+  color:#e4f9f5;
   text-decoration:none;
 }
 
@@ -32,7 +33,7 @@ body {
   font-size: 1.5rem;
   color : black;
   text-decoration:none;
-  margin-right : 50px;
+  margin-left: 600px;
   size: 200px;
 }
 .contest-btn{
@@ -40,28 +41,32 @@ body {
   color : #e4f9f5;
   text-decoration:none;
   margin-left:130px;
+  margin-top:20px;
 }
 
-.box{
-  background: linear-gradient(110deg,  #12232e 68.32%, #EEFBFB 60%);
+.home-btn{
+  font-size: 1.5rem;
+  color : black;
+  text-decoration:none;
+  margin-right : 30px;
+  size: 200px;
 }
 
-/* Title styles */
-#title {
+#title{
   background: linear-gradient(110deg,  #12232e 60%, #EEFBFB 60%);
-  height: 32rem;
-}
+} 
 
 .title-text {
   color: #e4f9f5;
   padding-left: 8rem;
-  padding-top: 10rem;
+  padding-top: 8.5rem;
   font-size: 3.5rem;
 }
 
 .title-image {
-  height: 30rem;
-  margin-top: 4rem;
+  height: 32rem;
+  margin-top: 40px;
+  
 }
 
 .title-name{
@@ -71,26 +76,61 @@ body {
 
 /* Carousel styles */
 #carousel {
-  background: #203647;
+  background: #12232e;
   height: 32rem;
+  padding:20px;
+}
 
+.carousel-card{
+  background-color: #EEFBFB;
+  margin-right:20px;
+  padding: 20px;
+ margin-left:20px;
+}
+
+.carousel-inner{
+ padding:110px;
+}
+
+.card-text{
+  font-size:25px;
 }
 
 /* Cards styles */
 #cards-section {
   background-color: #EEFBFB;
-  height: 87rem;
 }
 
-.card {
+.home-card {
   margin: 2rem;
-  background-color: #40514e;
+  background-color:#EEFBFB;
   color: #e4f9f5;
+  border:none;
 }
 
 .images {
-  height: 7.5rem;
+  width:50%;
   background-color: white;
+  border-radius: 50%;
+  border: 6px solid #12232e ;
+  margin : auto;
+
+}
+
+.images:hover{
+  border: none;
+}
+
+.third-title{
+  text-align:center;
+  color:#12232e;
+  padding-top:20px;
+  padding-bottom:30px;
+  font-size:70px;
+}
+
+.card-btn{
+  text-align:center;
 }
 
 /* Contact Us styles */
@@ -128,21 +168,199 @@ text-align:center;
   color: Bisque;
 }
 
+.submit-btn{
+  margin-bottom:20px;
+}
+
 
 /* Contest page */
 
+
+
+.nav-class{
+  background-color: #e4f9f5;
+}
+
+.title-name-contest{
+  color: #12232e;
+  text-align: left;
+  margin-left: 130px;
+}
+
+.title-name-contest:hover{
+   color:#12232e;
+}
+
+#contest-page{
+  background-color: #12232e;
+}
+
 .contest-card{
-  margin-left: 300px;
+  
+  background-color: #e4f9f5;
+  
+  width:60%;
+  margin:auto;
+  margin-top:50px;
 }
 
 .card-title{
   text-align : center;
 }
 
+.card-text{
+  font-size:20px;
+  color: #12232e;
+}
+
+.time-buttons{
+  text-align:center;
+}
+
+
+
 /* footer */
 
 #footer{
-  background-color: #e4f9f5;
-  height:320px;
+  background-color: #12232e;
+  text-align:center;
+  /* padding:40px; */
+  color: #e4f9f5;
+  padding-top:50px;
+  padding-bottom:10px;
 }
+
+/* About Page */
+ .about-text{
+   color:#e4f9f5;
+   text-align: justify;
+   line-height:30px;
+   padding:120px;
+   padding-top:30px;
+   padding-bottom:40px;
+ }
+
+ .about-title{
+   text-align: center;
+   color:#e4f9f5;
+   margin-top:50px;
+   font-size:50px;
+ }
+
+ .dev-heading{
+   color:#e4f9f5;
+   text-align: center;
+   font-size:50px;
+   margin-bottom:30px;
+ }
+
+ .team-card{
+   margin:20px;
+   background-color: #12232e;
+   border:none;
+ }
+
+ .my-img{
+   width:300px;
+   margin:auto;
+   transition: .5s ease;
+   backface-visibility: hidden;
+   opacity: 1;
+ }
+
+ .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.team-card:hover .my-img {
+  opacity: 0.3;
+ 
+}
+
+.team-card:hover .middle {
+  opacity: 1;
+}
+
+ #developers{
+   margin-bottom:20px;
+ }
+
+ .my-name{
+   color:#e4f9f5;
+   font-size:30px;
+   margin-bottom:20px;
+   margin-top:20px;
+ }
+
+
+ .my-icon{
+   margin:12px;
+   color:white;
+   font-size:30px;
+ }
+
+
+ /* RESPONSIVENESS */
+
+ @media (min-width: 1800px){
+   .title-image{
+     width:100%;
+   }
+ }
+
+ @media (min-width: 1139px) and (max-width: 1252px){
+   .contact-btn{
+     margin-left:300px;
+   }
+ }
+
+ @media (min-width: 1075px) and (max-width: 1138px){
+  .contact-btn{
+    margin-left:300px;
+  }
+  .title-image{
+    width:100%;
+  }
+
+.title-text{
+  font-size: 3.2rem;
+}
+ }
+
+@media (max-width:1074px){
+
+  #title{
+    background: linear-gradient(100deg,  #12232e 60%, #EEFBFB 60%);
+   
+  } 
+
+  .contact-btn{
+    margin-left:300px;
+  }
+
+  .title-text{
+    font-size:2.4rem;
+  }
+
+  .title-image{
+    width:100%;
+    height:93%;
+   
+  }
+}
+
+
+
+
+
+
+
+
+
 

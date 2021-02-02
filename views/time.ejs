@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title> CompCode </title>
+  <title> CC Monitor </title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
@@ -12,18 +12,20 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body>
+<body style="background-color: #12232e;">
   <!-- Navigation Bar -->
-  <div>
-  <nav class="navbar navbar-custom box">
-    <a class="navbar-brand title-name" href="#">CompCode</a>
+  <section>
+  <nav class="navbar navbar-custom nav-class">
+    <a class="navbar-brand title-name-contest" href="#">CC Monitor</a>
    <form action="/team" method="POST">
-    <button class="team-btn btn btn-outline-dark" type="submit" name="button">About</button>
+    <a class="home-btn btn btn-outline-dark" href="/">Home</a>
+    <button class="team-btn btn btn-dark" type="submit" name="button">About</button>
 
    </form>
-   <a class="contact-btn btn btn-outline-dark" href="/">Home</a>
+   
   </nav>
-
+</section>
+<section id="contest-page">
   <div class="card contest-card">
     <div class="card-body">
       <h1 class="card-title">
@@ -34,16 +36,24 @@
 
 
 
-      <form action="/contest" method="POST">
-        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>fut"
+      <form action="/contest" method="POST" class="buttons">
+        <div class="time-buttons">
+        
+
+        <button class="card-link btn btn-lg btn-outline-dark" name="num1" value="<%= platform %>fut"
           type="submit">Future Contests</button>
 
 
-        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>liv" type="submit">Live
+        <button class="card-link btn btn-lg btn-outline-dark" name="num1" value="<%= platform %>liv" type="submit">Live
           Contests</button>
-        <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>pas" type="submit">Past
+        <button class="card-link btn btn-lg btn-outline-dark" name="num1" value="<%= platform %>pas" type="submit">Past
           Contests</button>
+
+        </div>
 
       </form>
       </div>
       </div>
+    </section>
+    </body>
+      <!-- <%- include("footer"); -%> -->

@@ -3,26 +3,29 @@
 
 <head>
   <meta charset="utf-8">
-  <title> CompCode </title>
+  <title> CC Monitor </title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body>
+<body style="background-color: #12232e;">
   <!-- Navigation Bar -->
-  <div>
-  <nav class="navbar navbar-custom box">
-    <a class="navbar-brand title-name" href="#">CompCode</a>
+  <section>
+  <nav class="navbar navbar-custom nav-class">
+    <a class="navbar-brand title-name-contest" href="#">CC Monitor</a>
    <form action="/team" method="POST">
-    <button class="team-btn btn btn-outline-dark" type="submit" name="button">About</button>
+    <a class="home-btn btn btn-outline-dark" href="/">Home</a>
+    <button class="team-btn btn btn-dark" type="submit" name="button">About</button>
 
    </form>
-   <a class="contact-btn btn btn-outline-dark" href="/">Home</a>
+   
   </nav>
+</section>
 
     <div class="card contest-card">
         <div class="card-body">
@@ -34,30 +37,32 @@
 
 
 
-            <form action="/contest" method="POST">
-                <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>fut"
+            <form action="/contest" method="POST" class="buttons">
+                <div class="time-buttons">
+                <button class="card-link btn btn-lg btn-outline-dark" name="num1" value="<%= platform %>fut"
                     type="submit">Future Contests</button>
 
 
-                <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>liv"
+                <button class="card-link btn btn-lg btn-outline-dark" name="num1" value="<%= platform %>liv"
                     type="submit">Live
                     Contests</button>
-                <button class="card-link btn btn-lg btn-outline-light" name="num1" value="<%= platform %>pas"
+                <button class="card-link btn btn-lg btn-outline-dark" name="num1" value="<%= platform %>pas"
                     type="submit">Past
                     Contests</button>
 
+                </div>
             </form>
         </div>
     </div>
 
 
-    <div class="card text-center">
+    <div class="card text-center contest-card">
         <div class="card-header">
-           <%= platform %> <%= time %> Contests
+           <h4><%= platform %> <%= time %> contests</h4>
         </div>
         <div class="card-body">
 
-            <p class="card-text">No <%= time %> contests available.</p>
+            <h3 class="card-text">No contests available.</h3>
 
         </div>
 

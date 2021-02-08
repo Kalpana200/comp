@@ -127,7 +127,9 @@ app.post("/contest", function (req, res) {
 });
 
 
-
+app.post("/contact" , function(req , res){
+  res.render("contact");
+});
 
 app.post("/team", function (req, res) {
   res.render("team");

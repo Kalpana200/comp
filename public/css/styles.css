@@ -83,7 +83,7 @@ body {
 /* Carousel styles */
 #carousel {
   background: #12232e;
-  height: 32rem;
+  /* height: 32rem; */
   padding:20px;
 }
 
@@ -319,6 +319,7 @@ text-align:center;
    .title-image{
      width:100%;
    }
+   
  }
 
  @media (min-width: 1139px) and (max-width: 1252px){

@@ -127,12 +127,14 @@ app.post("/contest", function (req, res) {
 });
 
 
-app.post("/contact" , function(req , res){
-  res.render("contact");
-});
+
 
 app.post("/team", function (req, res) {
+  let buttons = req.body.button;
+  if(buttons==="second")
   res.render("team");
+  else
+  res.render("contact");
 });
 
 
